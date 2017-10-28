@@ -27,7 +27,7 @@ class Invite(models.Model):
 			("O", "Other"),
 			("?", "Unknown")
 		)
-		RACE = models.CharField(
+		race = models.CharField(
 			max_length=10,
 			choices=RACE_CHOICES,
 			default="?"
